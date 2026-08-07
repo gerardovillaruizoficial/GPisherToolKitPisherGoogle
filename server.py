@@ -138,7 +138,5 @@ async def codigo(ctx, session_id: str, codigo: str):
     await ctx.send(embed=embed)
     del pending_sessions[session_id]
 
-   TOKEN = os.environ.get("DISCORD_TOKEN")
-   bot.run(TOKEN)
-
-
+TOKEN = os.environ.get("DISCORD_TOKEN")
+bot.run(TOKEN)
